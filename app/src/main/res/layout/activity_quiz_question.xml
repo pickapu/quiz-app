@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ques"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="what country does it belong to"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flagimg"
+            android:src="@drawable/ic_flag_of_argentina"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="16dp">
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:id="@+id/progressbar"
+                android:minHeight="15dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColor="#363A43"
+                android:textSize="14sp"
+                android:text="0/10"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opt1"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="option 1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opt2"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="option 1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opt3"
+            android:padding="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="option 1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opt4"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="option 1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:background="@color/design_default_color_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="submit"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

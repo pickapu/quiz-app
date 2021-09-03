@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ic_bg"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_trophy"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:id="@+id/rusername"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correct answer 9 out 10"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/result"
+        />
+    <Button
+        android:id="@+id/resultbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/white"
+        android:text="finsih"
+        />
+
+
+
+
+</LinearLayout>
